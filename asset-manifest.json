@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Cairomed/static/css/main.cdbb84fb.css",
+    "main.js": "/Cairomed/static/js/main.5a3462a8.js",
+    "static/js/787.43d82440.chunk.js": "/Cairomed/static/js/787.43d82440.chunk.js",
+    "static/media/fa-solid-900.ttf": "/Cairomed/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/fa-brands-400.ttf": "/Cairomed/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/fa-solid-900.woff2": "/Cairomed/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/fa-brands-400.woff2": "/Cairomed/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/ArabcoLogo.png": "/Cairomed/static/media/ArabcoLogo.f36b6784e99055870378.png",
+    "static/media/logoo-removebg-preview.png": "/Cairomed/static/media/logoo-removebg-preview.90e27773c637f3feecab.png",
+    "static/media/fa-regular-400.ttf": "/Cairomed/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/MycrofeedLogo.png": "/Cairomed/static/media/MycrofeedLogo.7b3e2913343570015ad2.png",
+    "static/media/Logo.png": "/Cairomed/static/media/Logo.84ca6d9aaf47880e368b.png",
+    "static/media/BiodreamLogo.png": "/Cairomed/static/media/BiodreamLogo.97c6f804c463e0bb25a8.png",
+    "static/media/fa-regular-400.woff2": "/Cairomed/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/fa-v4compatibility.ttf": "/Cairomed/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Cairomed/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "index.html": "/Cairomed/index.html",
+    "main.cdbb84fb.css.map": "/Cairomed/static/css/main.cdbb84fb.css.map",
+    "main.5a3462a8.js.map": "/Cairomed/static/js/main.5a3462a8.js.map",
+    "787.43d82440.chunk.js.map": "/Cairomed/static/js/787.43d82440.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdbb84fb.css",
+    "static/js/main.5a3462a8.js"
+  ]
+}
