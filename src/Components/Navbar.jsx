@@ -87,6 +87,11 @@ function Navbar() {
                   Scientific Articles
                 </Link>
               </li>
+              <li class="nav-item">
+                <Link class="nav-link" to="/OurRepresentative">
+                  Our Representatives
+                </Link>
+              </li>
             </ul>
 
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
