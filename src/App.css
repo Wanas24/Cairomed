@@ -1,38 +1,311 @@
-.App {
-  text-align: center;
+/* global */
+:root{
+  --main-color: #3588c9;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pointer{
+cursor: pointer;
+}
+.btmBorder{
+  height: 3px;
+  width: 80px;
+  margin: auto;
+  background-color: var(--main-color);}
+
+  .mt-6{
+    margin-top: 60px;
+  }
+
+  .myColor1{
+    color: #3588c9 !important
+  }
+  .myBg1{
+    background-color:  #3588c9 !important
+  }
+  .myBg2{
+    background-color:  #f3951e !important
+  }
+  .myColor2{
+    color: #f3951e
+  }
+
+
+/* navbar */
+.navbar-brand{
+  font-weight: bold;
+}
+.navbar-brand img{
+width: 100px;
+}
+.nav-link:focus, .nav-link:hover {
+  color:#3588c9 !important;
+  border-bottom: #f3951e solid 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Home */
+/* .home{
+  
+}  */
+.homeSlider {
+  height: 60vh !important;
+}
+.homeSlider img {
+  height: 60vh !important;
+}
+.home-content{
+  background-color: #f8f9fa;
+}
+.home-content h2{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px !important;
+  font-weight: 500!important;
+  }
+ 
+
+  .home-content h2::after{
+    content: "";
+    animation-name:typing ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-size: 60px !important;
+    
+  }
+  .home-content p{
+    font-family: 'Courier New', Courier, monospace;
+        line-height: 1.5;
+        /* color: rgba(255, 255, 255, 0.75) !important; */
+        font-size: 18px;
+        }
+
+@keyframes typing {
+  0% {
+    content: "|";
+  }
+  6% {
+    content: "C|";
+  }
+
+  12% {
+    content: "Ca|";
+  }
+
+  18% {
+    content: "Cai|";
+  }
+
+  24% {
+    content: "Cair|";
+  }
+
+  30% {
+    content: "Cairo|";
+  }
+
+  36% {
+    content: "Cairom|";
+  }
+
+  46% {
+    content: "Cairomed|";
+  }
+
+  
+  52% {
+    content: "Cairomed|";
+    
+  }
+
+  58% {
+    content: "Cairome|";
+   
+  }
+
+  64% {
+    content: "Cairom|";
+    
+  }
+
+  70% {
+    content: "Cairo|";
+   
+  }
+
+  76% {
+    content: "Cair|";
+    
+  }
+
+  82% {
+    content: "Cai|";
+    
+  }
+
+  88% {
+    content: "Ca|";
+    
+  }
+  94% {
+    content: "C|";
+    
+  }
+  100% {
+    content: "|";
+    
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+/* contact */
+.contact{
+  background-color: #f8f9fa;
+}
+.contactDetails{
+  font-size:26px;
+}
+.icon200{
+  font-size: 200px;
+  color:var(--main-color);
+  margin-bottom: 20px;
+}
+
+/* products */
+
+
+.PartnersLogo{
+  height: 80px;
+  
+}
+
+.item{
+  overflow: hidden;
+  height: 250px;
+  
+}
+
+.item img{
+  width: 100%;
+  height: 100%;
+   overflow: hidden;
+   transition: all 1s;
+   object-fit: contain;
+}
+.item-layer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.layer{
+  position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+  background-color: rgba(0, 0, 0, 0.7); 
+  opacity: 0;
+  transition: all 1s;
+}
+.item:hover .layer{
+   opacity: 1;
+}
+
+.item:hover img{
+  transform: scale(1.1);
+}
+
+.lang{
+  width: 70px;
+  height: 40px;
+  
+  position: fixed;
+  top: 30%;
+}
+.myBtn{
+  background-color: #3588c9;
+}
+
+ .lang:hover .myBtn{
+  background-color:#f3951e !important ;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* singleProduct */
+
+.container .singleProductImg {
+  width: 250px !important;
+  height: 500px !important;
+  object-fit: contain;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ProductDetailsAR{
+  direction: rtl;
+}
+
+.ProductDetailsAR h3 {
+  color: #3588c9;
+}
+.ProductDetailsENG{
+  direction: ltr;
+}
+.ProductDetailsENG h3{
+  color: #3588c9;
+}
+
+
+.cartimg{
+  object-fit: contain;
+}
+
+
+
+/* Admin */
+
+.action{
+
+  height: 250px;
+  border: solid #3588c9 2px;
+  border-radius: 50px;
+  font-size: 100px;
+  color: #3588c9;
+  
+  
+}
+
+.action:hover{
+  box-shadow: 8px 8px 5px #f3951e;
+  transition: 0.5s ease-in-out;
+}
+
+/* our orders */
+
+
+.singleOrder{
+  background-color: #f3951e;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.ourOrders{
+  background-color: #3588c9;
+  min-height: 100vh;
+}
+
+
+.delIcon{
+  font-size: 20px; 
+}
+.delIcon:hover {
+  color: red;
+  transform: rotate(-110deg);
+}
+
+
+/* Articles */
+.Articles{
+  margin-top: 100px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }

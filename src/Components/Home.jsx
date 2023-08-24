@@ -1,0 +1,147 @@
+import React, { Component, useState } from 'react'
+import{auth} from '../Config/Firebase'
+import{createUserWithEmailAndPassword,signOut} from 'firebase/auth'
+import logo from "../images/Logo.png"
+import logoo from "../images/logoo-removebg-preview.png"
+
+
+
+function Home() {
+    
+// const[formData,setformData]=useState({
+// email:'',
+// password:''
+// });
+
+const [email,setemail]=useState('')
+const [password,setpasssword]=useState('')
+const [errMsg,seterrMsg]=useState('')
+const [successMsg,setsuccessMsg]=useState('')
+
+
+
+   
+    return (
+        <>
+        <div className='home'>
+          <div id="carouselExampleIndicators" className="carousel slide homeSlider" data-bs-ride="true">
+  <div className="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" className="" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" className="" aria-label="Slide 3"></button>
+  </div>
+  <div className="carousel-inner">
+    <div className="carousel-item active ">
+      <img src="https://images.pexels.com/photos/2695703/pexels-photo-2695703.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="d-block w-100" alt="..." />
+    </div>
+    <div className="carousel-item ">
+      <img src="https://images.pexels.com/photos/2255459/pexels-photo-2255459.jpeg?auto=compress&cs=tinysrgb&w=600" className="d-block w-100" alt="..." />
+    </div>
+    <div className="carousel-item">
+      <img src="https://images.pexels.com/photos/3820303/pexels-photo-3820303.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="d-block w-100" alt="..." />
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+          </div>
+        
+          <div class="home-content  text-center py-3 ">
+          <h4 class="py-2"> Welcome to</h4>
+          <h2  class="fs-2 py-2 text-uppercase">  </h2>
+          <p id='about' class="py-3 text-center ">
+               Your gate to veterinary</p>
+               
+                {/* <Link className=' text-decoration-none ' to="/login">
+                    <a  class="download rounded-pill border border-1 bg-transparent text-white  fs-6  text-decoration-none">Stuff Login</a>
+                </Link> */}
+            
+      </div>
+
+</div>
+
+
+{/* <div class="setting d-flex align-items-center justify-content-center ">
+     <i class="fa-solid fa-gear fs-3 text-white fa-spin"></i>
+     
+</div> */}
+
+
+
+
+
+{/* <div class="scrol">
+     <img src={scrollGif} class="w-100" alt=""/>
+</div> */}
+
+{/* about section */}
+
+<h2 className='text-center mt-5'>About Us</h2>
+<div className='btmBorder'></div>
+<div className='about container mt-5' >
+<div className='row justify-content-between'>
+  <div className='col-lg-6 col-md-12 text-center'>
+  "Welcome to Cairomed, a leading provider of specialized poultry medicine in Egypt. With a deep understanding of the unique challenges faced by the poultry industry, we are dedicated to delivering high-quality products that promote the health and well-being of poultry across the country. Our mission at Cairomed is to be the trusted partner for poultry farmers and industry professionals, offering a comprehensive range of innovative medicines and solutions. We strive to ensure the highest standards of quality and efficacy in our products, backed by extensive research and development. Our commitment extends beyond product excellence, as we aim to build long-lasting relationships with our customers based on integrity, reliability, and outstanding customer service. With an extensive distribution network, we are proud to serve customers in every corner of Egypt, ensuring that our poultry medicines are accessible to all. Join us in shaping a healthier and more productive poultry industry. Discover the Cairomed difference today."  </div>
+  <div className='col-lg-4 col-md-12 bg align-self-center'>
+<img src={logoo} alt="" srcset="" className='w-100 '/>
+  </div>
+
+</div>
+
+</div>
+        
+
+{/* contact section  */}
+<section class="contact mt-5  pt-3" id="contact">
+     <h2 class="text-center mt-5">Contact</h2>
+     <div class="btmBorder"></div>
+     <br/><br/>
+     <div class="container d-flex justify-content-around flex-wrap">
+          <div class="contactDetails  col-sm-12 col-lg-6 align-self-center ">
+               <div class="mb-3 w-75">
+                    <i class="fa-solid fa-phone"></i>
+                    <br />
+                    <a href="tel:0504906351" className='text-decoration-none'>Tel: 050-4906351</a><p class="d-inline-block"> </p>
+                    <br />
+                    <a href="tel:01011466330" className='text-decoration-none'>Mobile: 01011466330</a><p class="d-inline-block"> </p>
+                    <br />
+                    <a href="tel:01551936225" className='text-decoration-none'>Mobile: 01551936225</a><p class="d-inline-block"> </p>
+               </div>
+
+               <div  class="mb-4 w-75 ">
+                    <i class="fa-brands fa-facebook"></i>
+                    <br />
+                    <a class="text-decoration-none" href="https://www.facebook.com/">Facebook Page</a>
+               </div>
+               <div  class="mb-4 w-75 ">
+                  <i class="fa-solid fa-envelope"></i>                    <br />
+                    <a class="text-decoration-none" >Email: cairomed30@yahoo.com</a>
+               </div>
+               <div>
+                    <i class="fa-solid fa-map-location-dot w-75"></i>
+                    <br />
+                    <a href="https://goo.gl/maps/hhprSqL8uC7LtdJMA"><p class="d-inline-block"> Geser Al Nile, Madinet Mit Ghamr, Dakahlia Governorate</p></a>
+               </div>
+               
+          </div>
+          <br/>
+          <div class="map col-sm-12 col-lg-3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d823.3252260891294!2d31.255484882960904!3d30.72363630362061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1690032121898!5m2!1sen!2seg"  height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       </div>
+     </div>
+    </section>
+
+
+        
+  
+
+  
+        </>
+      )
+}
+
+export default Home
