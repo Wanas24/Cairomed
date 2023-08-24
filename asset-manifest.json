@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Cairomed/static/css/main.cdbb84fb.css",
-    "main.js": "/Cairomed/static/js/main.5a3462a8.js",
+    "main.css": "/Cairomed/static/css/main.2aeb7c87.css",
+    "main.js": "/Cairomed/static/js/main.1737fefa.js",
     "static/js/787.43d82440.chunk.js": "/Cairomed/static/js/787.43d82440.chunk.js",
     "static/media/fa-solid-900.ttf": "/Cairomed/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/fa-brands-400.ttf": "/Cairomed/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
@@ -17,12 +17,12 @@
     "static/media/fa-v4compatibility.ttf": "/Cairomed/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
     "static/media/fa-v4compatibility.woff2": "/Cairomed/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/Cairomed/index.html",
-    "main.cdbb84fb.css.map": "/Cairomed/static/css/main.cdbb84fb.css.map",
-    "main.5a3462a8.js.map": "/Cairomed/static/js/main.5a3462a8.js.map",
+    "main.2aeb7c87.css.map": "/Cairomed/static/css/main.2aeb7c87.css.map",
+    "main.1737fefa.js.map": "/Cairomed/static/js/main.1737fefa.js.map",
     "787.43d82440.chunk.js.map": "/Cairomed/static/js/787.43d82440.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cdbb84fb.css",
-    "static/js/main.5a3462a8.js"
+    "static/css/main.2aeb7c87.css",
+    "static/js/main.1737fefa.js"
   ]
 }
