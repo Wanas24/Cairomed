@@ -31,12 +31,12 @@ console.log(filterdData)
 
 
 
-  <div class="card" style={{ width: '18rem' }}>
-  <img src={representative.ImgURL} class="card-img-top" alt="..."/>
-  <div class="card-body ProductDetailsAR">
-    <p class="card-text"> <i class="fa-regular fa-address-card"></i><span className=''>الاسم: </span>{representative.Name} </p>
-    <p class="card-text"><i class="fa-solid fa-map-location-dot"></i><span className=''>المنطقة: </span>{representative.Region}</p>
-    <p class="card-text"><i class="fa-solid fa-phone"></i><span className=''>رقم الموبيل: </span>{representative.Phone}</p>
+  <div class="card mb-3" style={{ width: '18rem' }}>
+  <img src={representative.ImgURL} class="card-img-top cardImg" alt="..."/>
+  <div class="card-body ProductDetailsAR ">
+    <p class="card-text"><i class="fa-regular fa-address-card cardText"></i><span className='cardText'> الاسم: </span>{representative.Name} </p>
+    <p class="card-text"><i class="fa-solid fa-map-location-dot cardText"></i><span className='cardText'> المنطقة: </span>{representative.Region}</p>
+    <p class="card-text"><i class="fa-solid fa-phone cardText"></i><span className='cardText'> رقم الموبيل: </span>{representative.Phone}</p>
   </div>
 
 </div> 

@@ -71,10 +71,15 @@ async function getBio() {
     <h2 className='text-center mt-4'>Products</h2>
     <div className='btmBorder'></div>
       <div className='Filters d-flex justify-content-center mt-3'>
-    <button onClick={getProductList} className='btn btn-success m-3'>All</button>
-    <img onClick={getArabco} className='PartnersLogo m-3 pointer' src={Arabcologo} alt="" srcset="" />
-    <img onClick={getMycro} className='PartnersLogo m-3 pointer' src={Mycrologo} alt="" srcset="" />
-    <img onClick={getBio} className='PartnersLogo m-3 pointer' src={Biologo} alt="" srcset="" />
+        <div className=' container'>
+          <div className='row justify-content-center container'>
+
+    <button onClick={getProductList} className='btn btn-success myBtn PartnersLogo col-3'>All</button>
+    <img onClick={getArabco} className='PartnersLogo  pointer col-3' src={Arabcologo} alt="" srcset="" />
+    <img onClick={getMycro} className='PartnersLogo  pointer col-3' src={Mycrologo} alt="" srcset="" />
+    <img onClick={getBio} className='PartnersLogo  pointer col-3' src={Biologo} alt="" srcset="" />
+          </div>
+        </div>
     {/* <button onClick={getArabco} className='btn btn-success m-3'></button>
     <button onClick={getMycro} className='btn btn-success m-3'>Mycro</button>
     <button onClick={getBio} className='btn btn-success m-3'>Bio</button> */}

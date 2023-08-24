@@ -98,8 +98,14 @@ function SingleProduct() {
         <div className='btmBorder'></div>
     
 
-        <div className='row justify-content-between'>
-        <div className='col-6 ProductDetailsENG'>
+        <div className='row justify-content-between flex-row-reverse'>
+        <div className='col-lg-3 col-md-12 text-center'>
+        <button onClick={()=>addToCart()} className="btn btn-success mt-5">Add to cart                   <i className="fa-solid fa-cart-shopping"></i>
+</button>
+<br />
+  <img src={singleProduct.ImgURL} alt="" srcset="" className='singleProductImg align-self-center' />
+</div>
+        <div className='col-lg-6 col-md-12 ProductDetailsENG'>
         {singleProduct.CompositionENG?<>
            
            <h3>Composition:</h3>
@@ -204,14 +210,7 @@ function SingleProduct() {
          
 
         </div>
-        <div className='col-3 '>
-        <button onClick={()=>addToCart()} className="btn btn-success  ">Add to cart                   <i className="fa-solid fa-cart-shopping"></i>
-</button>
-        <img src={singleProduct.ImgURL} alt="" srcset="" className='singleProductImg ' />
-         
-        
 
-        </div>
         </div>
         
       </div>
@@ -224,15 +223,15 @@ function SingleProduct() {
         <div className='container'>
           <h2 className='text-center mt-5'>{singleProduct.ProductName}</h2>
           <div className='btmBorder'></div>
-          <button onClick={()=>addToCart(SingleProduct)} className="btn btn-success"> <i className="fa-solid fa-cart-shopping"></i>    أضف الى السلة
-</button>
 
           <div className='row justify-content-between'>
-          <div className='col-3'>
-
-          <img src={singleProduct.ImgURL} alt="" srcset="" className='singleProductImg' />
-          </div>
-          <div className='col-6 ProductDetailsAR'>
+          <div className='col-lg-3 col-md-12 text-center'>
+          <button onClick={()=>addToCart(SingleProduct)} className="btn btn-success mt-5"> <i className="fa-solid fa-cart-shopping"></i>    أضف الى السلة
+</button>
+<br />
+  <img src={singleProduct.ImgURL} alt="" srcset="" className='singleProductImg align-self-center' />
+</div>
+          <div className='col-lg-6 col-md-12  ProductDetailsAR'>
            {singleProduct.Composition?<>
            
             <h3>التركيب:</h3>
