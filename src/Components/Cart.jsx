@@ -1,9 +1,8 @@
 
+import { collection, getDocs } from 'firebase/firestore'
 import React, { useEffect, useState } from 'react'
-import {getDocs,collection,query, where,} from 'firebase/firestore'
-import{db} from '../Config/Firebase'
 import { Link } from 'react-router-dom'
-import Order from './Order'
+import { db } from '../Config/Firebase'
 
 
 export const Cart = (props) => {

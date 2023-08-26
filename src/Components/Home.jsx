@@ -1,7 +1,4 @@
-import React, { Component, useState } from 'react'
-import{auth} from '../Config/Firebase'
-import{createUserWithEmailAndPassword,signOut} from 'firebase/auth'
-import logo from "../images/Logo.png"
+import React, { useState } from 'react'
 import logoo from "../images/logoo-removebg-preview.png"
 
 

@@ -1,6 +1,6 @@
+import { collection, getDocs } from 'firebase/firestore'
 import React, { useEffect, useState } from 'react'
-import {getDocs,collection,deleteDoc,doc} from 'firebase/firestore'
-import{db} from '../Config/Firebase'
+import { db } from '../Config/Firebase'
 
 
 function ScientificArticles() {

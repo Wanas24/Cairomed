@@ -1,7 +1,7 @@
+import { collection, getDocs } from 'firebase/firestore'
 import React, { useEffect, useState } from 'react'
+import { db } from '../Config/Firebase'
 import Partic from './partic'
-import {getDocs,collection,query, where,} from 'firebase/firestore'
-import{db} from '../Config/Firebase'
 
 function Representative() {
 

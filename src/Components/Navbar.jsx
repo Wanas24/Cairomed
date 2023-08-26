@@ -1,11 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { auth } from '../Config/Firebase';
 import { signOut } from 'firebase/auth';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { auth } from '../Config/Firebase';
 import logo from '../images/Logo.png';
 import { Cart } from './Cart';
 import { CartContext } from './Context/cartStore';
-import Login from './Login';
 
 function Navbar() {
   let { myCart } = useContext(CartContext);
