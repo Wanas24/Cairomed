@@ -64,7 +64,7 @@ function Orders() {
         <h3 className='text-center mt-5 '> *لا يوجد أوردرات*</h3>
         
         </>:
-        ordersList.map((order)=>(<div className='col-lg-3 col-sm-6  mt-3 border singleOrder m-2'>
+        ordersList.map((order)=>(<div className='col-lg-3 col-sm-6 singleOrder mt-3 '>
             
             <i onClick={()=>deleteOrder(order.id)} className="fas fa-trash-alt float-start px-3 delIcon "></i>
             <br />

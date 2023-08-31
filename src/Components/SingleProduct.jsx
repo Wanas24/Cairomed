@@ -100,7 +100,7 @@ function SingleProduct() {
 
         <div className='row justify-content-between flex-row-reverse'>
         <div className='col-lg-3 col-md-12 text-center'>
-        <button onClick={()=>addToCart()} className="btn btn-success mt-5">Add to cart                   <i className="fa-solid fa-cart-shopping"></i>
+        <button onClick={()=>addToCart()} className="btn btn-success mt-5 mb-3">Add to cart                   <i className="fa-solid fa-cart-shopping"></i>
 </button>
 <br />
   <img src={singleProduct.ImgURL} alt="" srcset="" className='singleProductImg align-self-center' />
@@ -226,7 +226,7 @@ function SingleProduct() {
 
           <div className='row justify-content-between'>
           <div className='col-lg-3 col-md-12 text-center'>
-          <button onClick={()=>addToCart(SingleProduct)} className="btn btn-success mt-5"> <i className="fa-solid fa-cart-shopping"></i>    أضف الى السلة
+          <button onClick={()=>addToCart(SingleProduct)} className="btn btn-success mt-5 mb-3"> <i className="fa-solid fa-cart-shopping"></i>    أضف الى السلة
 </button>
 <br />
   <img src={singleProduct.ImgURL} alt="" srcset="" className='singleProductImg align-self-center' />

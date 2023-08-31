@@ -203,7 +203,7 @@ const Order = () => {
           {/* <button type="submit">Submit</button> */}
         </form>
         <div className='d-flex justify-content-center mt-4'>
-          <button form='form' type='submit' className='btn btn-success myBtn w-50'>
+          <button form='form' type='submit' className='btn btn-success myBtn w-50 mb-4'>
             Make Order
           </button>
         </div>

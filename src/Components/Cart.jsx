@@ -79,7 +79,7 @@ export const Cart = (props) => {
         </h3> */}
         <Link to='/Orders'>
         
-         <button  className='btn btn-success'>CheckOut</button>
+         <button data-bs-dismiss="offcanvas" className='btn btn-success'>CheckOut</button>
         </Link>
       </div>:<>
       

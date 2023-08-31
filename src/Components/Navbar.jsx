@@ -1,5 +1,5 @@
 import { signOut } from 'firebase/auth';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useMemo, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { auth } from '../Config/Firebase';
 import logo from '../images/Logo.png';
@@ -7,13 +7,14 @@ import { Cart } from './Cart';
 import { CartContext } from './Context/cartStore';
 
 function Navbar() {
-  let { myCart } = useContext(CartContext);
-  let { setMyCart } = useContext(CartContext);
-  let [isLogged, setIsLogged] = useState('');
+  const { myCart, setMyCart } = useContext(CartContext);
+  const [isLogged, setIsLogged] = useState('');
+  const [navState, setNavState] = useState(false);
   const navigate = useNavigate();
-  let location =useLocation();
-  let isHomePage1 = location.pathname === '/';
-  let isHomePage2 = location.pathname === '/Home';
+  const location = useLocation();
+  const isHomePage = location.pathname === '/' || location.pathname === '/Home';
+
+  const memoizedCart = useMemo(() => [myCart, setMyCart], [myCart, setMyCart]);
 
   async function logout() {
     try {
@@ -25,34 +26,42 @@ function Navbar() {
   }
 
   useEffect(() => {
-    // Listen for changes in the authentication state
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
-        // User is logged in
         setIsLogged(true);
       } else {
-        // User is logged out
         setIsLogged(false);
       }
     });
 
-    // Clean up the subscription when the component unmounts
     return () => unsubscribe();
   }, []);
 
+  function hideNav() {
+    setNavState(false);
+  }
+
+  function showNav() {
+    setNavState(true);
+  }
+
+  function handleNavItemClick() {
+    hideNav();
+  }
+
   return (
     <>
-      <Cart cart={[myCart, setMyCart]} />
+      <Cart cart={memoizedCart} />
 
-      <nav className="navbar navbar-expand-lg bg-light fixed-top ">
+      <nav className="navbar navbar-expand-lg bg-light fixed-top">
         <div className="container">
-          <Link to='/'>
-          
-          <a className="navbar-brand" href="#">
-            <img src={logo} alt="" srcset="" />
-          </a>
+          <Link to="/">
+            <a className="navbar-brand" href="#">
+              <img src={logo} alt="" srcSet="" />
+            </a>
           </Link>
           <button
+            onClick={showNav}
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -63,31 +72,39 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <Link class="nav-link" to="/">
+          <div className={`collapse navbar-collapse ${navState ? 'show' : ''}`} id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0" onClick={handleNavItemClick}>
+              <li className="nav-item">
+                <Link className="nav-link" to="/" onClick={hideNav}>
                   Home
                 </Link>
               </li>
-              { isHomePage1||isHomePage2?<><li class="nav-item">
-                          <a class="nav-link" href="#about">About</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#contact">Contact</a>
-                      </li></>:<></>}
-              <li class="nav-item">
-                <Link class="nav-link" to="/Products">
+              {isHomePage && (
+                <>
+                  <li className="nav-item" onClick={hideNav}>
+                    <a className="nav-link" href="#about">
+                      About
+                    </a>
+                  </li>
+                  <li className="nav-item" onClick={hideNav}>
+                    <a className="nav-link" href="#contact">
+                      Contact
+                    </a>
+                  </li>
+                </>
+              )}
+              <li className="nav-item" onClick={hideNav}>
+                <Link className="nav-link" to="/Products">
                   Products
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/ScientificArticles">
+              <li className="nav-item" onClick={hideNav}>
+                <Link className="nav-link" to="/ScientificArticles">
                   Scientific Articles
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/OurRepresentative">
+              <li className="nav-item" onClick={hideNav}>
+                <Link className="nav-link" to="/OurRepresentative">
                   Our Representatives
                 </Link>
               </li>
@@ -96,26 +113,26 @@ function Navbar() {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               {isLogged && auth.currentUser.email === 'admin@admin.com' ? (
                 <>
-                  <li class="nav-item">
-                    <Link class="nav-link" to="/Admin">
+                  <li className="nav-item" onClick={hideNav}>
+                    <Link className="nav-link" to="/Admin">
                       Control Board
                     </Link>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item" onClick={hideNav}>
                     <a onClick={logout} className="nav-link pointer ">
                       Logout
                     </a>
                   </li>
                 </>
               ) : (
-                <li class="nav-item">
-                  <Link class="nav-link" to="/login">
+                <li className="nav-item" onClick={hideNav}>
+                  <Link className="nav-link" to="/login">
                     Admin Login
                   </Link>
                 </li>
               )}
 
-              <li className="nav-item">
+              <li className="nav-item" onClick={hideNav}>
                 <a
                   type="button"
                   data-bs-toggle="offcanvas"
@@ -124,7 +141,7 @@ function Navbar() {
                   className="nav-link"
                   href="#"
                 >
-                 Cart <i className="fa-solid fa-cart-shopping"></i>
+                  Cart <i className="fa-solid fa-cart-shopping"></i>
                 </a>
               </li>
             </ul>

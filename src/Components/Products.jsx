@@ -67,6 +67,9 @@ async function getBio() {
 
     return (
     < >
+
+           
+
     
     <h2 className='text-center mt-4'>Products</h2>
     <div className='btmBorder'></div>

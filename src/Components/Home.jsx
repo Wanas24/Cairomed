@@ -122,14 +122,14 @@ const [successMsg,setsuccessMsg]=useState('')
                <div>
                     <i class="fa-solid fa-map-location-dot w-75"></i>
                     <br />
-                    <a href="https://goo.gl/maps/hhprSqL8uC7LtdJMA"><p class="d-inline-block"> Geser Al Nile, Madinet Mit Ghamr, Dakahlia Governorate</p></a>
+                    <a href="https://goo.gl/maps/16TPApxK8W9KidD97"><p class="d-inline-block"> Geser Al Nile, Madinet Mit Ghamr, Dakahlia Governorate</p></a>
                </div>
                
           </div>
           <br/>
           <div class="map col-sm-12 col-lg-3 d-flex justify-content-center align-items-center">
   <div class="text-center mx-auto">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d823.3252260891294!2d31.255484882960904!3d30.72363630362061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1690032121898!5m2!1sen!2seg" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50162.205669614275!2d31.217691626639184!3d30.72340665182138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c15a7f5d6241%3A0xe566f21b25ab9a8b!2z2LTYsdmD2Kkg2YPYp9mK2LHZiNmF2YrYrw!5e0!3m2!1sen!2seg!4v1693233359715!5m2!1sen!2seg" width="400" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </div>
      </div>
