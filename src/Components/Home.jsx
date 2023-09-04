@@ -113,7 +113,7 @@ const [successMsg,setsuccessMsg]=useState('')
                <div  class="mb-4 w-75 ">
                     <i class="fa-brands fa-facebook"></i>
                     <br />
-                    <a class="text-decoration-none" href="https://www.facebook.com/">Facebook Page</a>
+                    <a class="text-decoration-none" href="https://www.facebook.com/profile.php?id=61550614966784">Facebook Page</a>
                </div>
                <div  class="mb-4 w-75 ">
                   <i class="fa-solid fa-envelope"></i>                    <br />
