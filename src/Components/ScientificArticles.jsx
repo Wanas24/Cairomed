@@ -52,11 +52,14 @@ function ScientificArticles() {
         data-bs-parent="#accordionFlushExample"
       >
         <div class="accordion-body">
-          <div>{article.Paragraph}</div>
-          <div>{article.Paragraph1}</div>
-          <div>{article.Paragraph2}</div>
-          <div>{article.Paragraph3}</div>
-          <div>{article.Paragraph4}</div>
+          
+          <div><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{article.Paragraph1}</div>
+          <br />
+          <div><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{article.Paragraph2}</div>
+          <br />
+          <div><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{article.Paragraph3}</div>
+          <br />
+          <div><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>{article.Paragraph4}</div>
         </div>
       </div>
     </div>

@@ -2,9 +2,7 @@ import { collection, getDocs, query, where, } from 'firebase/firestore'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { db } from '../Config/Firebase'
-import Arabcologo from "../images/ArabcoLogo.png"
-import Biologo from "../images/BiodreamLogo.png"
-import Mycrologo from "../images/MycrofeedLogo.png"
+
 
 
 
@@ -78,9 +76,9 @@ async function getBio() {
           <div className='row justify-content-center container'>
 
     <button onClick={getProductList} className='btn btn-success myBtn PartnersLogo col-3'>All</button>
-    <img onClick={getArabco} className='PartnersLogo  pointer col-3' src={Arabcologo} alt="" srcset="" />
-    <img onClick={getMycro} className='PartnersLogo  pointer col-3' src={Mycrologo} alt="" srcset="" />
-    <img onClick={getBio} className='PartnersLogo  pointer col-3' src={Biologo} alt="" srcset="" />
+    <img onClick={getArabco} className='PartnersLogo  pointer col-3' src='https://firebasestorage.googleapis.com/v0/b/cmp-firebase-dba28.appspot.com/o/ArabcoLogo.png?alt=media&token=9d7d73b7-4430-4267-a5c6-f4a955e50364' alt="" srcset="" />
+    <img onClick={getMycro} className='PartnersLogo  pointer col-3' src='https://firebasestorage.googleapis.com/v0/b/cmp-firebase-dba28.appspot.com/o/MycrofeedLogo.png?alt=media&token=8f602115-2b02-4eca-9cf4-d37eb4156edf' alt="" srcset="" />
+    <img onClick={getBio} className='PartnersLogo  pointer col-3' src="https://firebasestorage.googleapis.com/v0/b/cmp-firebase-dba28.appspot.com/o/BiodreamLogo.png?alt=media&token=9028036e-9637-4805-a896-52454d8f0425" alt="" srcset="" />
           </div>
         </div>
     {/* <button onClick={getArabco} className='btn btn-success m-3'></button>
