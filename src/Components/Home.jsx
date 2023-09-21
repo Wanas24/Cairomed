@@ -80,7 +80,7 @@ const [successMsg,setsuccessMsg]=useState('')
 
 <h2 className='text-center mt-5'>About Us</h2>
 <div className='btmBorder'></div>
-<div className='about container mt-5' >
+<div className='about container' >
 <div className='row justify-content-between'>
   <div className='col-lg-6 col-md-12 text-center align-self-center'>
   "Welcome to Cairomed, a leading provider of specialized poultry medicine in Egypt. With a deep understanding of the unique challenges faced by the poultry industry, we are dedicated to delivering high-quality products that promote the health and well-being of poultry across the country. Our mission at Cairomed is to be the trusted partner for poultry farmers and industry professionals, offering a comprehensive range of innovative medicines and solutions. We strive to ensure the highest standards of quality and efficacy in our products, backed by extensive research and development. Our commitment extends beyond product excellence, as we aim to build long-lasting relationships with our customers based on integrity, reliability, and outstanding customer service. With an extensive distribution network, we are proud to serve customers in every corner of Egypt, ensuring that our poultry medicines are accessible to all. Join us in shaping a healthier and more productive poultry industry. Discover the Cairomed difference today."  </div>
