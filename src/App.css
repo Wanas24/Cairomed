@@ -38,6 +38,10 @@ cursor: pointer;
 .navbar-brand img{
 width: 100px;
 }
+.nav-link{
+  color: #16364d;
+  font-weight: 625;
+}
 .nav-link:focus, .nav-link:hover {
   color:#3588c9 !important;
   border-bottom: #f3951e solid 2px;
@@ -63,12 +67,12 @@ width: 100px;
   }
  
 
-  .home-content h2::after{
+  .cairomedh1::after{
     content: "";
     animation-name:typing ;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    font-size: 60px !important;
+    
     
   }
   .home-content p{
@@ -321,5 +325,71 @@ width: 100px;
 
 .cardImg{
   height: 250px;
+}
+
+/* V2 */
+/* HomeV2 */
+
+.HomeV2{
+  background-image: url(images/Homepage\ backgroud.png);
+  height: 100vh;
+  background-position: center center;
+  background-size:cover ;
+  background-repeat: no-repeat
+  
+
+
+}
+/* .slider{
+  background-image: url(images/Slider.jpg);
+  height: 400px;
+  width: 100%;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+} */
+
+
+.gradiant{
+padding-left: 15px;
+padding-right: 15px;
+
+font-weight: 625;
+background: rgb(255,204,0);
+background: linear-gradient(90deg, rgba(255,204,0,1) 0%, rgba(255,165,17,1) 100%);
+border-radius: 75px;
+}
+.cairomedh1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 70px !important;
+}
+.gradiant h2{
+  font-size: 28px;
+}
+.w-80{
+  width: 80%;
+}
+.text-right{
+ font-size: small;
+}
+.orderBTN{
+  color: #16364d;
+}
+.fa-arrow-right{
+  background-color: #16364d;
+  padding: 7px;
+  border-radius: 150px;
+  
+}
+.orderBTN{
+  font-weight: 1000;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 70px;
+  border: none;
+  font-size: small;
+  
 }
 
