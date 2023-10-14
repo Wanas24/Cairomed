@@ -17,7 +17,7 @@ function Home() {
   return (
     <>
     
-      <div className="HomeV2 d-flex align-items-center justify-content-center">
+      <div className="HomeV2 d-flex align-items-center justify-content-center ">
         <div className=" w-100 overflow-hidden">
           <div
             id="carouselExampleIndicators"
@@ -47,12 +47,13 @@ function Home() {
                 className=""
                 aria-label="Slide 3"
               ></button>
+              
             </div>
             <div className="carousel-item active " data-bs-interval="10000">
               <div className="carousel-inner">
-                <div className=" container h-100 ">
-                  <div className="row justify-content-around">
-                  <div className="col-lg-4 col-md-12 align-self-center">
+                <div className=" container h-100   ">
+                  <div className="row justify-content-around mt-10 ">
+                  <div className="col-xsm-6 col-sm-6 col-md-5 col-lg-4  align-self-center overflow-hidden ">
                 <h1 className="cairomedh1 text-white text-center text-uppercase "></h1>
                 <div className="gradiant text-center ">
                 <i>
@@ -73,15 +74,18 @@ function Home() {
                     
                  </div>
                   </div>
-                  <div className="col-lg-6 col-md-12  align-self-center">
-                    <img src={slide1img} alt="" srcset="" />
-
+                  <div className="col-xsm-6 col-sm-6 col-md-7 col-lg-6  align-self-center overflow-hidden">
+                    <div className="imgdiv">
+                    <img className="globalImg w-100" src={slide1img} alt="" srcset="" />
                     <div className="w-100 m-auto d-flex">
 
-                    <button className="orderBTN  bg bg-white ms-auto"><Link to='/Products' className=""><i class="fa-solid fa-arrow-right text-white"></i> ORDER NOW</Link></button>
+<button className="orderBTN bg-white ms-auto"><Link to='/Products' className="text-decoration-none btncolor"><i class="fa-solid fa-arrow-right text-white"></i> ORDER NOW</Link></button>
+</div>
                     </div>
+
                   </div>
                   </div>
+                  
                 </div>
               </div>
               <div className="carousel-item " data-bs-interval="10000">

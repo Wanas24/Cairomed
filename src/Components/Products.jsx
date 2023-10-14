@@ -69,7 +69,7 @@ async function getBio() {
            
 
     
-    <h2 className='text-center mt-4'>Products</h2>
+    <h2 className='text-center mt-7'>Products</h2>
     <div className='btmBorder'></div>
       <div className='Filters d-flex justify-content-center mt-3'>
         <div className=' container'>

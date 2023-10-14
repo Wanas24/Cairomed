@@ -30,6 +30,12 @@ cursor: pointer;
     color: #f3951e
   }
 
+  .mt-10{
+    margin-top: 110px;
+  }
+  .mt-7{
+    margin-top: 70px;
+  }
 
 /* navbar */
 .navbar-brand{
@@ -52,7 +58,7 @@ width: 100px;
   
 }  */
 .homeSlider {
-  height: 60vh !important;
+  height: 100vh !important;
 }
 .homeSlider img {
   height: 60vh !important;
@@ -390,6 +396,27 @@ border-radius: 75px;
   border-radius: 70px;
   border: none;
   font-size: small;
+  color: #16364d !important;
+  
   
 }
+.btncolor{
+  color: #16364d !important;
+}
 
+.imgdiv{
+  position: relative;
+}
+
+
+@media (max-width: 600px) { 
+
+  .mt-10{
+    margin-top: 30px !important;
+  }
+  .orderBTN{
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+  }
+ }

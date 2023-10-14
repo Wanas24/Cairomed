@@ -25,7 +25,7 @@ console.log(filterdData)
   return (<>
   
   <Partic/>
-  <div className=' container mt-5'>
+  <div className=' container mt-7'>
 <div className='row flex-row-reverse justify-content-evenly mt-5'>
 {representativesList.map((representative)=>(
 
