@@ -421,5 +421,6 @@ border-radius: 75px;
   }
   .globalImg{
     height: 55vh !important;
+    margin-top: 5vh;
   }
  }
