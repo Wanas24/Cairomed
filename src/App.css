@@ -61,7 +61,7 @@ width: 100px;
   height: 100vh !important;
 }
 .homeSlider img {
-  height: 60vh !important;
+  height: 60vh ;
 }
 .home-content{
   background-color: #f8f9fa;
@@ -418,5 +418,8 @@ border-radius: 75px;
     position: absolute;
     right: 0;
     bottom: 10%;
+  }
+  .globalImg{
+    height: 55vh !important;
   }
  }
