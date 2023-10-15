@@ -424,3 +424,16 @@ border-radius: 75px;
     margin-top: 5vh;
   }
  }
+
+
+
+ .loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  background-color: #3588c9;
+  z-index: 99999999;
+height: 100vh;
+  
+ }

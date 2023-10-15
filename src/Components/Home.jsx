@@ -3,6 +3,7 @@ import logoo from "../images/logoo-removebg-preview.png";
 import slide1img from "../images/slide1img.png";
 import {Link}from "react-router-dom"
 
+
 function Home() {
   // const[formData,setformData]=useState({
   // email:'',
