@@ -15,7 +15,7 @@ const Layout = () => {
     <>
       <div className={`loading-screen ${isDocumentReady ? "fade-out" : ""}`}>
         {isDocumentReady ? (
-          <div>
+          <div className="content">
             <Navbar />
 
             <div className="mt-5">

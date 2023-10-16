@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import logoo from "../images/logoo-removebg-preview.png";
 import slide1img from "../images/slide1img.png";
-import {Link}from "react-router-dom"
-
+import { Link } from "react-router-dom";
 
 function Home() {
   // const[formData,setformData]=useState({
@@ -17,114 +16,66 @@ function Home() {
 
   return (
     <>
-    
       <div className="HomeV2 d-flex align-items-center justify-content-center ">
         <div className=" w-100 overflow-hidden">
-          <div
-            id="carouselExampleIndicators"
-            className="carousel slide homeSlider"
-            data-bs-ride="true"
-          >
-            <div className="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                className="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                className=""
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                className=""
-                aria-label="Slide 3"
-              ></button>
-              
-            </div>
-            <div className="carousel-item active " data-bs-interval="10000">
-              <div className="carousel-inner">
-                <div className=" container h-100   ">
-                  <div className="row justify-content-around mt-10 ">
-                  <div className="col-xsm-6 col-sm-6 col-md-5 col-lg-4  align-self-center overflow-hidden ">
+          <div className=" container h-100   ">
+            <div className="row justify-content-around mt-8 ">
+              <div className="col-xsm-6 col-sm-6 col-md-5 col-lg-4  align-self-center overflow-hidden ">
                 <h1 className="cairomedh1 text-white text-center text-uppercase "></h1>
                 <div className="gradiant text-center ">
-                <i>
-
-                  <h2 className=" d-inline-block  text-black ">
-                    High Quality Medicine
-                      
-                  </h2>
-                </i>
+                  <i>
+                    <h2 className=" d-inline-block  text-black ">
+                      High Quality Products
+                    </h2>
+                  </i>
                 </div>
-                
-                 
-                  <p className="text-white w-80 m-auto mt-2">Welcome to Cairomed, a leading provider of specialized poultry medicine in Egypt...</p>
-                 <div className="w-80 m-auto d-flex">
-                  
-                    
-                    <p className="text-white  d-inline-block ms-auto text-right " > <a className="text-white text-decoration-none" href="#about">Read More <i class="fa-solid fa-angles-right"></i></a></p>
-                    
-                 </div>
-                  </div>
-                  <div className="col-xsm-6 col-sm-6 col-md-7 col-lg-6  align-self-center overflow-hidden">
-                    <div className="imgdiv">
-                    <img className="globalImg w-100" src={slide1img} alt="" srcset="" />
-                    <div className="w-100 m-auto d-flex">
 
-<button className="orderBTN bg-white ms-auto"><Link to='/Products' className="text-decoration-none btncolor"><i class="fa-solid fa-arrow-right text-white"></i> ORDER NOW</Link></button>
-</div>
-                    </div>
-
-                  </div>
-                  </div>
-                  
+                <p className="text-white w-80 m-auto mt-2">
+                  Welcome to Cairomed, a leading provider of specialized poultry
+                  Products in Egypt...
+                </p>
+                <div className="w-80 m-auto d-flex">
+                  <p className="text-white  d-inline-block ms-auto text-right ">
+                    {" "}
+                    <a
+                      className="text-white text-decoration-none"
+                      href="#about"
+                    >
+                      Read More <i class="fa-solid fa-angles-right"></i>
+                    </a>
+                  </p>
                 </div>
               </div>
-              <div className="carousel-item " data-bs-interval="10000">
-               
-              </div>
-              <div className="carousel-item" data-bs-interval="10000">
-                
+              <div className="col-xsm-6 col-sm-6 col-md-7 col-lg-6  align-self-center overflow-hidden">
+                <div className="imgdiv">
+                  <img
+                    className="globalImg w-100"
+                    src={slide1img}
+                    alt=""
+                    srcset=""
+                  />
+                  <div className="w-100 m-auto d-flex">
+                    <button className="orderBTN bg-white ms-auto">
+                      <Link
+                        to="/Products"
+                        className="text-decoration-none btncolor"
+                      >
+                        <i class="fa-solid fa-arrow-right text-white"></i> ORDER
+                        NOW
+                      </Link>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
+        <div className="carousel-item " data-bs-interval="10000"></div>
+        <div className="carousel-item" data-bs-interval="10000"></div>
       </div>
-      <br id="about"/>
-      
+
+      <br id="about" />
+
       {/* <div className='home'>
           <div id="carouselExampleIndicators" className="carousel slide homeSlider" data-bs-ride="true">
   <div className="carousel-indicators">
@@ -178,13 +129,13 @@ function Home() {
 
       {/* about section */}
 
-      <h2 className="text-center mt-5" >About Us</h2>
+      <h2 className="text-center mt-5">About Us</h2>
       <div className="btmBorder"></div>
       <div className="about container">
         <div className="row justify-content-between">
           <div className="col-lg-6 col-md-12 text-center align-self-center">
             "Welcome to Cairomed, a leading provider of specialized poultry
-            medicine in Egypt. With a deep understanding of the unique
+            products in Egypt. With a deep understanding of the unique
             challenges faced by the poultry industry, we are dedicated to
             delivering high-quality products that promote the health and
             well-being of poultry across the country. Our mission at Cairomed is
@@ -197,7 +148,7 @@ function Home() {
             customers based on integrity, reliability, and outstanding customer
             service. With an extensive distribution network, we are proud to
             serve customers in every corner of Egypt, ensuring that our poultry
-            medicines are accessible to all. Join us in shaping a healthier and
+            products are accessible to all. Join us in shaping a healthier and
             more productive poultry industry. Discover the Cairomed difference
             today."{" "}
           </div>

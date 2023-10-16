@@ -341,7 +341,8 @@ width: 100px;
   height: 100vh;
   background-position: center center;
   background-size:cover ;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  
   
 
 
@@ -420,7 +421,7 @@ border-radius: 75px;
     bottom: 10%;
   }
   .globalImg{
-    height: 55vh !important;
+    height: 45vh !important;
     margin-top: 5vh;
   }
  }
@@ -434,6 +435,7 @@ border-radius: 75px;
   inset: 0;
   background-color: #3588c9;
   z-index: 99999999;
-height: 100vh;
+  height: 100vh;
   
  }
+ 
