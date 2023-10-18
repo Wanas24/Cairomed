@@ -4,16 +4,29 @@ import Navbar from "./Navbar";
 
 const Layout = () => {
   const [isDocumentReady, setIsDocumentReady] = useState(false);
+  const [isLoadEventFired, setIsLoadEventFired] = useState(false);
 
   useEffect(() => {
-    // Simulate document ready event
-    setTimeout(() => {
+    const handleLoad = () => {
+      setIsLoadEventFired(true);
       setIsDocumentReady(true);
-    }, 1500);
+    };
+
+    if (document.readyState === "complete") {
+      setIsLoadEventFired(true);
+      setIsDocumentReady(true);
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
+
   return (
     <>
-      <div className={`loading-screen ${isDocumentReady ? "fade-out" : ""}`}>
+      <div className={`loading-screen ${isLoadEventFired ? "fade-out" : ""}`}>
         {isDocumentReady ? (
           <div className="content">
             <Navbar />
