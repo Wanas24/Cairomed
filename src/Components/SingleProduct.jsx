@@ -94,7 +94,7 @@ function SingleProduct() {
     lang==="ENG"? <><div>
     {singleProduct ? (
       <div className='container'>
-        <h2 className='text-center mt-5'>{singleProduct.ProductNameENG}</h2>
+        <h2 className='text-center mt-7'>{singleProduct.ProductNameENG}</h2>
         <div className='btmBorder'></div>
     
 
@@ -221,7 +221,7 @@ function SingleProduct() {
     <div>
       {singleProduct ? (
         <div className='container'>
-          <h2 className='text-center mt-5'>{singleProduct.ProductName}</h2>
+          <h2 className='text-center mt-7'>{singleProduct.ProductName}</h2>
           <div className='btmBorder'></div>
 
           <div className='row justify-content-between'>

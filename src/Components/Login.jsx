@@ -31,7 +31,7 @@ const Login = () => {
 
   return (
     <>
-      <h2 className="text-center mt-5">Login form</h2>
+      <h2 className="text-center mt-7">Login form</h2>
       <div className="btmBorder mb-5"></div>
       <form className="form-control container mt-3" onSubmit={handleLogin}>
         <label htmlFor="">Email</label>
