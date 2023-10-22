@@ -39,8 +39,8 @@ const Login = () => {
       <div className=' col-sm-10'>
 
 
-      <form className="form-control loginForm mt-3 " onSubmit={handleLogin}>
-      <h2 className="text-center mt-3">Login form</h2>
+      <form className="form-control loginForm  " onSubmit={handleLogin}>
+      <h2 className="text-center  mb-2">Login form</h2>
         <label htmlFor="">Email</label>
         <input className="form-control" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
         <label htmlFor=""className='mt-3'>Password</label>
