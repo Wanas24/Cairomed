@@ -30,19 +30,30 @@ const Login = () => {
   }
 
   return (
-    <>
-      <h2 className="text-center mt-7">Login form</h2>
-      <div className="btmBorder mb-5"></div>
-      <form className="form-control container mt-3" onSubmit={handleLogin}>
+    <div className='loginPage justify-content-center align-items-center d-flex '>
+      {/* 
+      <div className="btmBorder mb-5"></div> */}
+      <div className='container  '>
+      <div className='row justify-content-center'>
+
+      <div className=' col-sm-10'>
+
+
+      <form className="form-control loginForm mt-3 " onSubmit={handleLogin}>
+      <h2 className="text-center mt-3">Login form</h2>
         <label htmlFor="">Email</label>
         <input className="form-control" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-        <label htmlFor="">Password</label>
+        <label htmlFor=""className='mt-3'>Password</label>
         <input className="form-control" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
         <p className="text-success">{successMsg}</p>
         <p className="text-danger">{errorMsg}</p>
         <button className="btn btn-success mt-3">Login</button>
       </form>
-    </>
+      </div>
+
+      </div>
+      </div>
+    </div>
   );
 };
 
