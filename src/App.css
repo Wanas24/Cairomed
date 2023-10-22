@@ -442,9 +442,10 @@ border-radius: 75px;
 
  .loginPage{
   height: 93Vh;
-  background: rgb(53,136,201);
+  /* background-color: #f3951e; */
+  /* background: rgb(53,136,201);
 
-  background: linear-gradient(90deg, rgba(53,136,201,1) 44%, rgba(243,149,30,1) 99%);
+  background: linear-gradient(90deg, rgba(53,136,201,1) 44%, rgba(243,149,30,1) 99%); */
  }
 
  .loginForm{

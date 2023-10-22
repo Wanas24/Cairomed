@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { auth } from '../Config/Firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
+import Partic from './partic';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -31,6 +32,7 @@ const Login = () => {
 
   return (
     <div className='loginPage justify-content-center align-items-center d-flex '>
+      <Partic/>
       {/* 
       <div className="btmBorder mb-5"></div> */}
       <div className='container  '>
