@@ -25,7 +25,7 @@ function Home() {
                 <div className="gradiant text-center ">
                   <i>
                     <h2 className=" d-inline-block  text-black ">
-                      High Quality Productssss
+                      High Quality Products
                     </h2>
                   </i>
                 </div>
