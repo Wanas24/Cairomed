@@ -167,7 +167,8 @@ function SingleProduct() {
            }
            {singleProduct.StoppingENG?<>
              <h3> Withdrawal Time:</h3>
-             <p>{singleProduct.StoppingENG}</p></>:
+             <LoopingParagraph text={singleProduct.StoppingENG} />
+             </>:
              <></>
            }
            {singleProduct.WarningsENG?<>
