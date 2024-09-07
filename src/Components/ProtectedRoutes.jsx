@@ -9,7 +9,7 @@ function ProtectedRoutes(props) {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setIsLoading(false);
-      if (user && user.email === 'admin@admin.com') {
+      if (user && user.email === 'cairomed@admin.com') {
         setIsLoggedIn(true);
       } else {
         setIsLoggedIn(false);
