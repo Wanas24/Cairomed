@@ -295,7 +295,7 @@ function SingleProduct() {
               <h3> فترة الرفع:</h3>
               <LoopingParagraph text={singleProduct.Stopping} />
              </>:
-              <></>
+            <></>
             }
             {singleProduct.Warnings?<>
               <h3> الاحتياطات والتحذيرات:</h3>
